@@ -11,7 +11,7 @@ class RAAirplayConnectivityContext: RAEventEmitter {
       .addObserver(
         self,
         selector: #selector(handleRouteChange),
-        name: AVAudioSession.routeChangeNotification,
+        name: NSNotification.Name.AVAudioSessionRouteChange,
         object: nil)
   }
 
